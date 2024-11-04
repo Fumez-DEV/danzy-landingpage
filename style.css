@@ -42,6 +42,12 @@ body {
     margin-bottom: 1rem;
     object-fit: cover;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for smooth effect */
+}
+
+.profile-img:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
 }
 
 h1 {
@@ -117,6 +123,12 @@ p {
 .x-profile {
     background: linear-gradient(135deg, #000000, #333333); /* Black gradient for a sleek look */
     color: #ffffff; /* White text for contrast */
+}
+
+.playlist {
+    background: linear-gradient(135deg, #282828, #3a3a3a); /* Dark gradient for playlist */
+    color: #ffffff; /* Text color */
+    border: 2px solid #ffffff; /* Optional border */
 }
 
 /* Footer styling */
