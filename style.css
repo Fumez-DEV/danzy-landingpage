@@ -1,0 +1,164 @@
+/* Add Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400&family=Montserrat:wght@700&family=Open+Sans:wght@400&family=Poppins:wght@600&family=Raleway:wght@400&family=Roboto:wght@400&display=swap');
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif; /* Body Font */
+}
+
+/* General container styling */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    margin: 0;
+    background-image: url('./images/ferrari.avif'); /* Set the desktop background image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the image */
+}
+
+.container {
+    text-align: center;
+    max-width: 350px; /* Slightly smaller max-width */
+    width: 90%; /* Ensures it doesn’t exceed viewport width */
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile section styling */
+.profile-img {
+    width: 100px; /* Reduced size */
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 1.5rem; /* Reduced font size */
+    font-family: 'Montserrat', sans-serif; /* Heading Font */
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    color: #1a1a1a;
+}
+
+.nickname {
+    font-size: 0.9rem; /* Slightly smaller */
+    font-family: 'Raleway', sans-serif; /* Nickname Font */
+    color: #888;
+    font-weight: normal;
+}
+
+p {
+    font-size: 0.9rem; /* Reduced font size */
+    font-family: 'Lora', serif; /* Paragraph Font */
+    color: #555;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+/* Links styling */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem; /* Reduced gap */
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the left */
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem; /* Reduced font size */
+    font-weight: bold;
+    padding: 0.9rem; /* Adjusted padding */
+    border-radius: 25px; /* Rounded buttons */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /* Prevents overflow */
+    width: 100%; /* Ensures consistent button sizing */
+}
+
+.link img {
+    width: 22px; /* Smaller icon size */
+    height: 22px;
+    margin-right: 0.5rem; /* Slightly smaller margin */
+}
+
+.link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Individual link gradient colors */
+.instagram {
+    background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+.tiktok {
+    background: linear-gradient(135deg, #69C9D0, #EE1D52);
+}
+.threads {
+    background: linear-gradient(135deg, #333333, #000000);
+}
+.pinterest {
+    background: linear-gradient(135deg, #e60023, #c82333);
+}
+.x-profile {
+    background: linear-gradient(135deg, #000000, #333333); /* Black gradient for a sleek look */
+    color: #ffffff; /* White text for contrast */
+}
+
+/* Footer styling */
+footer {
+    margin-top: 1.5rem;
+    font-size: 0.8rem; /* Reduced font size */
+    font-family: 'Roboto', sans-serif; /* Footer Font */
+    color: #999;
+}
+
+footer a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile background */
+@media (max-width: 500px) {
+    body {
+        background-image: url('./images/danzymb.avif'); /* Set the mobile background image */
+        background-size: cover; /* Ensure the image covers the entire background */
+        background-position: center; /* Center the image */
+    }
+    .container {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    .link {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+
+    .profile-img {
+        width: 80px;
+        height: 80px;
+    }
+}
